@@ -2639,10 +2639,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
+  color: #fff;
   background-color: transparent;
   background-image: none;
-  border-color: #6c757d;
+  border-color: #5a8682;
 }
 
 .btn-outline-secondary:hover {
