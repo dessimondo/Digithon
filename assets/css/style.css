@@ -1797,9 +1797,9 @@ header .form-inline {
 .profile-panel {
   background-color: #fff;
   box-shadow: 0 10px 20px -5px #00000009;
-  width: 240px;
+  width: 280px;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
 }
 
 .profile-content {
