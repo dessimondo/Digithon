@@ -26,44 +26,6 @@
     <!-- <link href="assets/css/charts/chartist.min.css" rel="stylesheet">  -->
     <!-- <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">  -->
 
-
-    <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
-        .traffic-chart { 
-            min-height: 335px; 
-        }
-        #flotPie1  {
-            height: 150px;
-        } 
-        #flotPie1 td {
-            padding:3px;
-        }
-        #flotPie1 table {
-            top: 20px!important;
-            right: -10px!important;
-        }
-        .chart-container {
-            display: table;
-            min-width: 270px ;
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #flotLine5  {
-             height: 105px;
-        } 
-
-        #flotBarChart {
-            height: 150px;
-        }
-        #cellPaiChart{
-            height: 160px;
-        }
-
-    </style>
-
 </head>
 <body>
 
@@ -204,339 +166,404 @@
             </div>
         </header><!-- /header -->
         <!-- Header-->
+        
 
-
-        <div class="content pb-0">
-
-            <!-- Widgets  -->
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-secondary">
-                        <div class="card-body">
-                            <div class="card-left pt-1 float-left">
-                                <h3 class="mb-0 fw-r">
-                                    <span class="currency float-left mr-1">+</span>
-                                    <span class="count">29</span>
-                                </h3>
-                                <p class="mt-1 m-0">Client Attrition</p>
-                            </div><!-- /.card-left -->
-
-                            <div class="card-right float-right text-right">
-                                <i class="icon fade-5 icon-lg pe-7f-users"></i>
-                                <!-- <div id="flotLine1" class="text-secondary flotLine1"></div> -->
-                            </div><!-- /.card-right -->
-
-                        </div>
-
-                    </div>
+        <div class="profile-content">
+            <!-- Profile panel -->
+            <div class="profile-panel content">
+                <p class="py-3">All Clients > Claudia Cee</p>
+                <div class="mx-auto d-block">
+                    <img class="rounded-circle mx-auto d-block" src="images/client.png" alt="Client">
+                    <h5 class="text-sm-center mt-2 mb-1 font-weight-bold text-uppercase">Claudia Cee</h5>
+                    <div class="text-sm-center text-black-50 pb-4">High Revenue Pre-retiree</div>
                 </div>
-                <!--/.col-->
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
-                        <div class="card-body">
-                            <div class="card-left pt-1 float-left">
-                                <h3 class="mb-0 fw-r">
-                                    <span class="currency float-left mr-1">$</span>
-                                    <span class="count float-left">385.6</span>
-                                    <span>m</span>
-                                </h3>
-                                <p class="text-light mt-1 m-0">AUM</p>
-                            </div><!-- /.card-left -->
-
-                            <div class="card-right float-right text-right">
-                                <div id="flotBar1" class="flotBar1"></div>
-                            </div><!-- /.card-right -->
-
-                        </div>
-
-                    </div>
+                <div class="row text-center">
+                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-phone"></i></a></div>
+                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-envelope"></i></a></div>
+                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-bell"></i></a></div>
                 </div>
-                <!--/.col-->
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-secondary">
-                        <div class="card-body">
-                            <div class="card-left pt-1 float-left">
-                                <h3 class="mb-0 fw-r">
-                                    <span class="currency float-left mr-1">$</span>
-                                    <span class="count float-left">12.6</span>
-                                    <span>m</span>
-                                </h3>
-                                <p class="mt-1 m-0">Revenue</p>
-                            </div><!-- /.card-left -->
-
-                            <div class="card-right float-right text-right">
-                                <i class="icon fade-5 icon-lg pe-7f-cash"></i>
-                            </div><!-- /.card-right -->
-
-                        </div>
-
-                    </div>
-                </div>
-                <!--/.col-->
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
-                        <div class="card-body">
-                            <div class="card-left pt-1 float-left">
-                                <h3 class="mb-0 fw-r">
-                                    <span class="count">48</span>
-                                </h3>
-                                <p class="text-light mt-1 m-0">Open Actions</p>
-                            </div><!-- /.card-left -->
-
-                            <div class="card-right float-right text-right">
-                                <i class="icon fade-5 icon-lg pe-7f-note2"></i>
-                            </div><!-- /.card-right -->
-
-                        </div>
-
-                    </div>
-                </div>
-                <!--/.col-->
-            </div> 
-            <!-- Widgets End -->
-
-            <div class="clearfix"></div>
-            
-            <div>
+                <hr>
                 <div class="row">
-                    <div class="col-xl-7">
-                        <!-- Top Actions -->
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="box-title">Orders </h4>
-                            </div>
-                            <div class="card-body--">
-                                <div class="table-stats order-table ov-h">
-                                    <table class="table ">
-                                        <thead>
-                                            <tr>
-                                                <th class="serial">#</th>
-                                                <th class="avatar">Avatar</th>
-                                                <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Product</th>
-                                                <th>Quantity</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody> 
-                                            <tr>
-                                                <td class="serial">1.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td> #5469 </td>
-                                                <td>  <span class="name">Louis Stanley</span> </td> 
-                                                <td> <span class="product">iMax</span> </td>
-                                                <td><span class="count">231</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">2.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a> 
-                                                    </div>
-                                                </td> 
-                                                <td> #5468 </td>
-                                                <td>  <span class="name">Gregory Dixon</span> </td> 
-                                                <td> <span class="product">iPad</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">3.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5467 </td>
-                                                <td>  <span class="name">Catherine Dixon</span> </td> 
-                                                <td> <span class="product">SSD</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">4.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5466 </td>
-                                                <td>  <span class="name">Mary Silva</span> </td> 
-                                                <td> <span class="product">Magic Mouse</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-pending">Pending</span>
-                                                </td>
-                                            </tr>
-                                            <tr class=" pb-0">
-                                                <td class="serial">5.</td>
-                                                <td class="avatar pb-0">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/6.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5465 </td>
-                                                <td>  <span class="name">Johnny Stephens</span> </td> 
-                                                <td> <span class="product">Monitor</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- /.table-stats -->
-                            </div>
-                        </div> <!-- /.card -->
-                        <!-- Mailbox -->
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title box-title">To Do List</h4>
-                                <div class="card-content">
-                                    <div class="todo-list">
-                                        <div class="tdl-holder">
-                                            <div class="tdl-content">
-                                                <ul>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox"><i class="check-box"></i><span>Conveniently fabricate interactive technology for ....</span> 
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox"><i class="check-box"></i><span>Creating component page</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Follow back those who follow you</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Design One page theme</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-    
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Creating component page</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div> 
-                                        </div>
-                                    </div> <!-- /.todo-list -->
-                                </div>
-                            </div> <!-- /.card-body -->
-                        </div><!-- /.card -->
-                        <!-- Products -->
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder-2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder-3.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  <!-- /.col-lg-7 -->
-
-                    <div class="col-md-12 col-lg-5">
-                        <!-- Calendar -->
-                        <div class="card">
-                            <div class="card-body">  
-                                <!-- <h4 class="box-title">Chandler</h4> -->
-                                <div class="calender-cont widget-calender">
-                                    <div id="calendar"></div>
-                                </div>
-                            </div>
-                        </div><!-- /.card -->
-                        <!-- News -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Custom Tab</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="custom-tab">
-
-                                    <nav>
-                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                            <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
-                                            <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
-                                            <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
-                                        </div>
-                                    </nav>
-                                    <div class="tab-content pl-3 pt-2" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div><!-- /.card -->
-                    </div> <!-- /.col-md-5 -->
-                </div> 
+                    <div class="col-12 pt-3">
+                        <h6>Networth</h6>
+                        <p>8.67M</p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>YTD Performance</h6>
+                        <p class="text-danger">-2.51%</p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>Opportunities</h6>
+                        <p>2 Products & 3 Activities</p>
+                    </div>
+                </div>
             </div>
 
+            <div class="content float-none pb-0">
+                <!-- Widgets  -->
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-secondary">
+                            <div class="card-body">
+                                <div class="card-left pt-1 float-left">
+                                    <h3 class="mb-0 fw-r">
+                                        <span class="currency float-left mr-1">+</span>
+                                        <span class="count">29</span>
+                                    </h3>
+                                    <p class="mt-1 m-0">Client Attrition</p>
+                                </div><!-- /.card-left -->
+    
+                                <div class="card-right float-right text-right">
+                                    <i class="icon fade-5 icon-lg pe-7f-users"></i>
+                                    <!-- <div id="flotLine1" class="text-secondary flotLine1"></div> -->
+                                </div><!-- /.card-right -->
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body">
+                                <div class="card-left pt-1 float-left">
+                                    <h3 class="mb-0 fw-r">
+                                        <span class="currency float-left mr-1">$</span>
+                                        <span class="count float-left">385.6</span>
+                                        <span>m</span>
+                                    </h3>
+                                    <p class="text-light mt-1 m-0">AUM</p>
+                                </div><!-- /.card-left -->
+    
+                                <div class="card-right float-right text-right">
+                                    <div id="flotBar1" class="flotBar1"></div>
+                                </div><!-- /.card-right -->
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--/.col-->
+    
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-secondary">
+                            <div class="card-body">
+                                <div class="card-left pt-1 float-left">
+                                    <h3 class="mb-0 fw-r">
+                                        <span class="currency float-left mr-1">$</span>
+                                        <span class="count float-left">12.6</span>
+                                        <span>m</span>
+                                    </h3>
+                                    <p class="mt-1 m-0">Revenue</p>
+                                </div><!-- /.card-left -->
+    
+                                <div class="card-right float-right text-right">
+                                    <i class="icon fade-5 icon-lg pe-7f-cash"></i>
+                                </div><!-- /.card-right -->
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--/.col-->
+    
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body">
+                                <div class="card-left pt-1 float-left">
+                                    <h3 class="mb-0 fw-r">
+                                        <span class="count">48</span>
+                                    </h3>
+                                    <p class="text-light mt-1 m-0">Open Actions</p>
+                                </div><!-- /.card-left -->
+    
+                                <div class="card-right float-right text-right">
+                                    <i class="icon fade-5 icon-lg pe-7f-note2"></i>
+                                </div><!-- /.card-right -->
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    
+                </div> 
+                <!-- Widgets End -->
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="black-header">Assets Allocation</h2>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <!-- Assets Allocation -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="custom-tab">
+    
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
+                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div><!-- /.card -->
+                        </div>  <!-- /.col-lg-8 -->
+    
+                        <div class="col-md-12 col-lg-4">
+                            <div class="card text-white bg-flat-color-1">
+                                <div class="card-body">
+                                    <div class="card-left pt-1 float-left">
+                                        <h3 class="mb-0 fw-r">
+                                            <span class="count">48</span>
+                                        </h3>
+                                        <p class="text-light mt-1 m-0">Open Actions</p>
+                                    </div><!-- /.card-left -->
+        
+                                    <div class="card-right float-right text-right">
+                                        <i class="icon fade-5 icon-lg pe-7f-note2"></i>
+                                    </div><!-- /.card-right -->
+                                </div>        
+                            </div>
+                            <div class="card text-white bg-flat-color-1">
+                                <div class="card-body">
+                                    <div class="card-left pt-1 float-left">
+                                        <h3 class="mb-0 fw-r">
+                                            <span class="count">48</span>
+                                        </h3>
+                                        <p class="text-light mt-1 m-0">Open Actions</p>
+                                    </div><!-- /.card-left -->
+        
+                                    <div class="card-right float-right text-right">
+                                        <i class="icon fade-5 icon-lg pe-7f-note2"></i>
+                                    </div><!-- /.card-right -->
+                                </div>        
+                            </div>
+                            <div class="card text-white bg-flat-color-1">
+                                <div class="card-body">
+                                    <div class="card-left pt-1 float-left">
+                                        <h3 class="mb-0 fw-r">
+                                            <span class="count">48</span>
+                                        </h3>
+                                        <p class="text-light mt-1 m-0">Open Actions</p>
+                                    </div><!-- /.card-left -->
+        
+                                    <div class="card-right float-right text-right">
+                                        <i class="icon fade-5 icon-lg pe-7f-note2"></i>
+                                    </div><!-- /.card-right -->
+                                </div>        
+                            </div>
+                            <div class="card text-white bg-flat-color-1">
+                                <div class="card-body">
+                                    <div class="card-left pt-1 float-left">
+                                        <h3 class="mb-0 fw-r">
+                                            <span class="count">48</span>
+                                        </h3>
+                                        <p class="text-light mt-1 m-0">Open Actions</p>
+                                    </div><!-- /.card-left -->
+        
+                                    <div class="card-right float-right text-right">
+                                        <i class="icon fade-5 icon-lg pe-7f-note2"></i>
+                                    </div><!-- /.card-right -->
+                                </div>        
+                            </div>
+                            
+                        </div> <!-- /.col-lg-4 -->
 
+                        <div class="col-md-12 col-lg-8">
+                            <h2 class="black-header">Performance</h2>
+                            <!-- Performance -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="custom-tab">
+    
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
+                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div><!-- /.card -->
+                        </div>
+
+                        <div class="col-md-12 col-lg-4">
+                            <h2 class="black-header">Risk Score</h2>
+                            <div class="card">
+                                <img class="card-img-top" src="images/placeholder-2.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Card Image Title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-6">
+                            <h2 class="black-header">IFTTT</h2>
+                            <div class="card">
+                                <div>
+                                    <div class="table-stats order-table ov-h">
+                                        <table class="table ">
+                                            <thead>
+                                                <tr>
+                                                    <th class="serial">#</th>
+                                                    <th class="avatar">Avatar</th>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Product</th>
+                                                    <th>Quantity</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> 
+                                                <tr>
+                                                    <td class="serial">1.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> #5469 </td>
+                                                    <td>  <span class="name">Louis Stanley</span> </td> 
+                                                    <td> <span class="product">iMax</span> </td>
+                                                    <td><span class="count">231</span></td>
+                                                    <td> 
+                                                        <span class="badge badge-complete">Complete</span>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">2.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a> 
+                                                        </div>
+                                                    </td> 
+                                                    <td> #5468 </td>
+                                                    <td>  <span class="name">Gregory Dixon</span> </td> 
+                                                    <td> <span class="product">iPad</span> </td>
+                                                    <td><span class="count">250</span></td>
+                                                    <td> 
+                                                        <span class="badge badge-complete">Complete</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">3.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a> 
+                                                        </div>
+                                                    </td>
+                                                    <td> #5467 </td>
+                                                    <td>  <span class="name">Catherine Dixon</span> </td> 
+                                                    <td> <span class="product">SSD</span> </td>
+                                                    <td><span class="count">250</span></td>
+                                                    <td> 
+                                                        <span class="badge badge-complete">Complete</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">4.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a> 
+                                                        </div>
+                                                    </td>
+                                                    <td> #5466 </td>
+                                                    <td>  <span class="name">Mary Silva</span> </td> 
+                                                    <td> <span class="product">Magic Mouse</span> </td>
+                                                    <td><span class="count">250</span></td>
+                                                    <td> 
+                                                        <span class="badge badge-pending">Pending</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class=" pb-0">
+                                                    <td class="serial">5.</td>
+                                                    <td class="avatar pb-0">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/6.jpg" alt=""></a> 
+                                                        </div>
+                                                    </td>
+                                                    <td> #5465 </td>
+                                                    <td>  <span class="name">Johnny Stephens</span> </td> 
+                                                    <td> <span class="product">Monitor</span> </td>
+                                                    <td><span class="count">250</span></td>
+                                                    <td> 
+                                                        <span class="badge badge-complete">Complete</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- /.table-stats -->
+                                </div>
+                            </div> <!-- /.card -->
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <h2 class="black-header">Market News</h2>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="custom-tab">
+    
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
+                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div><!-- /.card -->
+                        </div>
+
+                    </div> 
+                </div>
+            </div>
+            
 
             <div class="modal fade none-border" id="event-modal">
                 <div class="modal-dialog">

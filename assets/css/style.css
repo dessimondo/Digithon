@@ -929,7 +929,6 @@ aside.left-panel {
   padding: 0 30px;
   height: 55px;
   position: fixed;
-  left: 280px;
   left: 0;
   right: 0;
   top: 0;
@@ -954,6 +953,7 @@ aside.left-panel {
 
 .open .right-panel {
   margin-left: 83px; }
+
 .open .let-panel {
   z-index: 999; }
 
@@ -1792,6 +1792,18 @@ header .form-inline {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(to bottom right, #B0D3D1,rgb(152, 190, 189));
+}
+
+.profile-panel {
+  background-color: #fff;
+  box-shadow: 0 10px 20px -5px #00000009;
+  width: 240px;
+  bottom: 0;
+  z-index: 999;
+}
+
+.profile-content {
+  display: flex;
 }
 
 .black-header {
