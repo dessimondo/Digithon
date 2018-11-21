@@ -28,12 +28,6 @@
 
 
     <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
-        .traffic-chart { 
-            min-height: 335px; 
-        }
         #flotPie1  {
             height: 150px;
         } 
@@ -171,15 +165,15 @@
                                 <p class="red">You have 3 Notification</p>
                                 <a class="dropdown-item media" href="#">
                                     <i class="fa fa-check"></i>
-                                    <p>Server #1 overloaded.</p>
+                                    <p>Claudia Cee's passport updated.</p>
                                 </a>
                                 <a class="dropdown-item media" href="#">
                                     <i class="fa fa-info"></i>
-                                    <p>Server #2 overloaded.</p>
+                                    <p>Arul Kumar's Birthday tomorrow</p>
                                 </a>
                                 <a class="dropdown-item media" href="#">
                                     <i class="fa fa-warning"></i>
-                                    <p>Server #3 overloaded.</p>
+                                    <p>Ronald Tramp's Birthday yesterday</p>
                                 </a>
                             </div>
                         </div>
@@ -188,6 +182,8 @@
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <div class="user-name">John Smith</div>
+                            <i class="fa fa-caret-down pr-2"></i>
                         </a>
 
                         <div class="user-menu dropdown-menu">
@@ -199,7 +195,23 @@
 
                             <a class="nav-link" href="index.html"><i class="fa fa-sign-out"></i>Logout</a>
                         </div>
-                    </div> 
+                    </div>
+                    <div class="header-left">
+                        <div class="dropdown for-alexa">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="alexa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-microphone"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="float-left text-white"><img class="mr-3" src="images/alexa.png" alt="alexa">Hi, I'm listening...</p>
+                                <div class="float-right mr-3 text-teal">
+                                    <i class="fa fa-close"></i>
+                                </div>
+                                <div class="animation">
+                                    <img src="images/Alexa-Listening-Waves.gif" alt="listening">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>  
             </div>
         </header><!-- /header -->
@@ -211,14 +223,13 @@
             <!-- Widgets  -->
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-secondary">
+                    <div class="card text-white bg-positive card-tall">
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
-                                    <span class="currency float-left mr-1">+</span>
-                                    <span class="count">29</span>
+                                    <span class="count">269</span>
                                 </h3>
-                                <p class="mt-1 m-0">Client Attrition</p>
+                                <p class="text-light mt-1 m-0">Clients</p>
                             </div><!-- /.card-left -->
 
                             <div class="card-right float-right text-right">
@@ -233,7 +244,7 @@
                 <!--/.col-->
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
+                    <div class="card text-white bg-negative card-tall">
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
@@ -245,7 +256,7 @@
                             </div><!-- /.card-left -->
 
                             <div class="card-right float-right text-right">
-                                <div id="flotBar1" class="flotBar1"></div>
+                                <div id="flotBar1" class="flotBar1 fade-5"></div>
                             </div><!-- /.card-right -->
 
                         </div>
@@ -255,7 +266,7 @@
                 <!--/.col-->
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-secondary">
+                    <div class="card text-white bg-positive card-tall">
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
@@ -263,7 +274,7 @@
                                     <span class="count float-left">12.6</span>
                                     <span>m</span>
                                 </h3>
-                                <p class="mt-1 m-0">Revenue</p>
+                                <p class="text-light mt-1 m-0">Revenue</p>
                             </div><!-- /.card-left -->
 
                             <div class="card-right float-right text-right">
@@ -277,7 +288,7 @@
                 <!--/.col-->
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-flat-color-1">
+                    <div class="card text-white bg-positive card-tall">
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
