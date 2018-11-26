@@ -513,7 +513,7 @@ canvas {
 
 .order-table {
   position: relative; }
-  .order-table:after, .order-table:before {
+  /* .order-table:after, .order-table:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -523,7 +523,7 @@ canvas {
   .order-table:after {
     right: -1px; }
   .order-table:before {
-    left: -1px; }
+    left: -1px; } */
   .order-table tr th {
     background: #e8e9ef; }
   .order-table tr td:last-child, .order-table tr th:last-child {
@@ -1533,8 +1533,8 @@ header .form-inline {
   font-family: 'Open Sans'; }
   .table-stats table th,
   .table-stats table td {
-    border: none;
-    border-bottom: 1px solid #e8e9ef;
+    border-top: none;
+    /* border-bottom: 1px solid #e8e9ef; */
     color: #868e96;
     font-size: 12px;
     font-weight: normal;
@@ -1817,6 +1817,13 @@ header .form-inline {
   background-image: linear-gradient(to bottom right, #B0D3D1,rgb(152, 190, 189));
 }
 
+.bg-teal-dark {
+  background-color: #5a8682;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #B0D3D1, #5a8682);
+}
+
 .bg-positive {
   background-color: #B0D3D1;
   background-size: cover;
@@ -1874,17 +1881,23 @@ header .form-inline {
   min-height: 280px;
 }
 
+.rule-card {
+  min-height: 300px;
+}
+
 .rules-row div {
-  height: 53px;
+  height: 57px;
+  margin-left: -15px;
 }
 
 .rules-side {
   border-left: 5px solid #5a8682;
-  margin-left: 15px;
+  margin-left: -5px !important;
 }
 
 .rules-text,
-.rules-text p {
+.rules-text p,
+.rules-text .btn-sm {
   font-size: 12px;
 }
 
