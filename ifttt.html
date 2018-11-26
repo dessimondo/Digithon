@@ -1,0 +1,566 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X-Wealth | IFTTT</title>
+    <meta name="description" content="Wealth Management">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
+
+
+    <link href="assets/calendar/fullcalendar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="assets/css/charts/chartist.min.css" rel="stylesheet">  -->
+    <!-- <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">  -->
+
+</head>
+<body>
+
+
+    <!-- Left Panel --> 
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default"> 
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="overview.html"><i class="menu-icon fa fa-dashboard"></i>Overview </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Clients</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><a href="clients.html">All Clients</a></li>
+                            <li><a href="client-profile.html">Claudia Cee</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ifttt.html"><i class="menu-icon fa fa-calculator"></i>IFTTT</a>
+                    </li>
+                    <li>
+                        <a href="activities.html"> <i class="menu-icon fa fa-child"></i>Activities</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel --> 
+    <!-- Left Panel -->
+
+
+
+    <!-- Right Panel --> 
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">  
+            <div class="top-left">
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="./overview.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a> 
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> 
+                </div> 
+            </div>
+            <div class="top-right"> 
+                <div class="header-menu"> 
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-envelope"></i>
+                                <span class="count bg-primary">4</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Claudia Cee's passport updated.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Arul Kumar's Birthday tomorrow</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Ronald Tramp's Birthday yesterday</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <div class="user-name">John Smith</div>
+                            <i class="fa fa-caret-down pr-2"></i>
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+
+                            <a class="nav-link" href="client-mode.html"><i class="fa fa-exchange"></i>Switch mode</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
+
+                            <a class="nav-link" href="index.html"><i class="fa fa-sign-out"></i>Logout</a>
+                        </div>
+                    </div>
+                    <div class="header-left">
+                        <div class="dropdown for-alexa">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="alexa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-microphone"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="float-left text-white"><img class="mr-3" src="images/alexa.png" alt="alexa">Hi, I'm listening...</p>
+                                <div class="float-right mr-3 text-teal">
+                                    <i class="fa fa-close"></i>
+                                </div>
+                                <div class="animation">
+                                    <img src="images/Alexa-Listening-Waves.gif" alt="listening">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+
+
+        <div class="content pb-0">
+
+            <!-- Widgets  -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="black-header">New Rule</h2>
+                    <div class="card if-card mb-0">
+                        <div class="card-body py-0">
+                            <div class="row">
+                                <div class="col-6 py-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="mb-4 text-teal font-weight-bold">IF</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <h1 class="font-4xl mt-5 text-teal-light fade-5 border-bottom">THIS</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 border-left py-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="mb-4 text-teal font-weight-bold">THEN</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <h1 class="font-4xl mt-5 text-teal-light fade-5 border-bottom">THAT</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer py-3">
+                            <img class="small-thumbnail-back" src="images/160601.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160602.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a class="btn btn-teal" href="#">Add Rule</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="black-header">Most Activated Rules</h2>
+                    <div class="card if-card mb-0">
+                        <div class="py-0">
+                            <div class="row rules-row rules-text">
+                                <!-- First -->
+                                <div class="col-6 rules-side mb-1">
+                                    <p><span class="text-teal-light">Lost Prevention</span> <br>
+                                    <span class="text-teal">If</span> - <b class="text-dark">All Stocks</b> fall <b class="text-dark">below 7%</b> of purchase price</p>
+                                </div>
+                                <div class="col-3">
+                                    <p><br>
+                                    <span class="text-teal">Then</span> - Sell All Stocks</p>
+                                </div>
+                                <div class="col-2">
+                                    <span class="mt-3 btn btn-sm btn-teal">+ Copy</span>
+                                </div>
+                                <!-- Second -->
+                                <div class="col-6 rules-side mb-1">
+                                    <p><span class="text-teal-light">Earnings</span> <br>
+                                    <span class="text-teal">If</span> - <b class="text-dark">NFLX</b> earnings per share is <b class="text-dark">above $0.06</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <br><span class="text-teal">Then</span> - Buy NFLX
+                                </div>
+                                <div class="col-2">
+                                    <span class="mt-3 btn btn-sm btn-teal">+ Copy</span>
+                                </div>
+                                <!-- Third -->
+                                <div class="col-6 rules-side mb-1">
+                                    <p><span class="text-teal-light">Anticipating Unexpected</span> <br>
+                                    <span class="text-teal">If</span> - <b class="text-dark">Fed Funds</b> interest rates is <b class="text-dark">below 0.05%</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <br><span class="text-teal">Then</span> - Buy SPY
+                                </div>
+                                <div class="col-2">
+                                    <span class="mt-3 btn btn-sm btn-teal">+ Copy</span>
+                                </div>
+                                <!-- Fourth -->
+                                <div class="col-6 rules-side mb-1">
+                                    <p><span class="text-teal-light">Inflation</span> <br>
+                                    <span class="text-teal">If</span> - <b class="text-dark">US Inflation Growth Rate</b> is <b class="text-dark">below 1.5%</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <br><span class="text-teal">Then</span> - Buy WMT
+                                </div>
+                                <div class="col-2">
+                                    <span class="mt-3 btn btn-sm btn-teal">+ Copy</span>
+                                </div>
+                                <!-- Fifth -->
+                                <div class="col-6 rules-side">
+                                    <p><span class="text-teal-light">Earnings</span> <br>
+                                    <span class="text-teal">If</span> - <b class="text-dark">APPL</b> earnings per share is <b class="text-dark">above $0.05</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <br><span class="text-teal">Then</span> - Buy AAPL
+                                </div>
+                                <div class="col-2">
+                                    <span class="mt-3 btn btn-sm btn-teal">+ Copy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Widgets End -->
+
+            <h2 class="black-header pt-5">All Rules</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-file"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Send document to client's email</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160601.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160602.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-facebook-official"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Comment "Congratulations!" for client's life event</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160701.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160702.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-instagram"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Like client's new post</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160801.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160802.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-whatsapp"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Send document to client's whatsapp</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-line-chart"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Sell all when stock price dropped by 7%</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160603.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160602.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card if-card">
+                        <div class="card-body">
+                            <div class="float-left">
+                                <span class="text-teal-light"><i class="fa fa-2x fa-gift"></i></span>
+                            </div>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="clearfix"></div>
+                            <div class="mx-auto d-block">
+                                <h5 class="mt-4 text-teal font-weight-bold" style="font-size: 1.3em;">Send document to client's email</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <img class="small-thumbnail-back" src="images/160601.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160602.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe, Nancy Green and 98 others</span>
+                            <div class="float-right">
+                                <a href="#"><span class="text-teal"><i class="fa fa-edit"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="text-center pt-3 pb-5">
+                <div class="btn btn-outline-teal"><i class="fa fa-chevron-down"></i> &nbsp; View More</div>
+            </div>
+
+        </div> <!-- .content -->
+
+    </div><!-- /#right-panel -->
+
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+
+
+    <!--Chartist Chart-->
+
+    <script src="assets/js/lib/moment/moment.js"></script>
+    <script src="assets/calendar/fullcalendar.min.js"></script>
+    <script src="assets/calendar/fullcalendar-init.js"></script>
+
+    <!--Flot Chart-->
+
+    <script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
+    <script src="assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
+    <script src="assets/js/lib/flot-chart/jquery.flot.time.js"></script>
+
+    <script src="assets/js/widgets.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        jQuery(document).ready(function($) {
+            "use strict"; 
+            var chart1Options = {
+                series: {
+                    lines: {
+                        show: true
+                    },
+                    points: {
+                        show: true
+                    }
+                },
+                xaxis: {
+                    mode: "text"
+                },
+                grid: {
+                    hoverable: true
+                },
+                legend: {
+                    show: false
+                },
+                grid: {
+                    color: "#fff",
+                    hoverable: true,
+                    borderWidth: 0,
+                    backgroundColor: 'transparent'
+                },
+                tooltip: {
+                    show: true,
+                    content: "y: %y"
+                }
+            };
+            var chart1Data = {
+                label: "chart1",
+                color: "#5a8682",
+                data: [
+            [ '1', 70 ],
+            [ '1.5', 130 ],
+            [ '2', 90 ],
+            [ '2.5', 140 ],
+            [ '3', 230 ],
+            [ '3.5', 180 ],
+            [ '4', 240 ]
+            ]
+            };
+            var plot = $.plot( $( "#chart1" ), [ chart1Data ], chart1Options );
+        });
+    </script>
+<div id="container">
+  
+ 
+  
+</div>
+
+
+
+</body>
+</html>
