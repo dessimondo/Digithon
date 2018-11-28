@@ -315,228 +315,282 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <!-- Top Actions -->
+                        <h2 class="black-header">Top Actions</h2>
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="box-title">Orders </h4>
-                            </div>
-                            <div class="card-body--">
-                                <div class="table-stats order-table ov-h">
-                                    <table class="table ">
-                                        <thead>
-                                            <tr>
-                                                <th class="serial">#</th>
-                                                <th class="avatar">Avatar</th>
-                                                <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Product</th>
-                                                <th>Quantity</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody> 
-                                            <tr>
-                                                <td class="serial">1.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td> #5469 </td>
-                                                <td>  <span class="name">Louis Stanley</span> </td> 
-                                                <td> <span class="product">iMax</span> </td>
-                                                <td><span class="count">231</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">2.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a> 
-                                                    </div>
-                                                </td> 
-                                                <td> #5468 </td>
-                                                <td>  <span class="name">Gregory Dixon</span> </td> 
-                                                <td> <span class="product">iPad</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">3.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5467 </td>
-                                                <td>  <span class="name">Catherine Dixon</span> </td> 
-                                                <td> <span class="product">SSD</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="serial">4.</td>
-                                                <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5466 </td>
-                                                <td>  <span class="name">Mary Silva</span> </td> 
-                                                <td> <span class="product">Magic Mouse</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-pending">Pending</span>
-                                                </td>
-                                            </tr>
-                                            <tr class=" pb-0">
-                                                <td class="serial">5.</td>
-                                                <td class="avatar pb-0">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/avatar/6.jpg" alt=""></a> 
-                                                    </div>
-                                                </td>
-                                                <td> #5465 </td>
-                                                <td>  <span class="name">Johnny Stephens</span> </td> 
-                                                <td> <span class="product">Monitor</span> </td>
-                                                <td><span class="count">250</span></td>
-                                                <td> 
-                                                    <span class="badge badge-complete">Complete</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- /.table-stats -->
+                            <div class="card-body p-0">
+                                <div class="custom-tab">
+    
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Priority</a>
+                                            <a class="px-3 py-2 nav-item nav-link active" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Top Losers</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Opportunities</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-week-tab" data-toggle="tab" href="#custom-nav-week" role="tab" aria-controls="custom-nav-week" aria-selected="false">Life Events</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-today-tab" data-toggle="tab" href="#custom-nav-today" role="tab" aria-controls="custom-nav-today" aria-selected="false">High Attrition</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content pt-2" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
+                                            <div class="py-4">
+                                                <div class="client-select-group">
+                                                    <label class="pl-3 pr-1">Networth</label>
+                                                    <select class="client-select" name="priority" id="priority">
+                                                        <option value="" selected>Descending</option>
+                                                        <option value="">Ascending</option>
+                                                    </select>
+                                                </div>
+                                                <div class="client-select-group">
+                                                    <label class="pl-3 pr-1">Demographics</label>
+                                                    <select class="client-select" name="demographics" id="demographics">
+                                                        <option value="" selected>All</option>
+                                                        <option value="">< 20</option>
+                                                        <option value="">20 - 30</option>
+                                                        <option value="">30 - 50</option>
+                                                        <option value="">> 50</option>
+                                                    </select>
+                                                </div>                
+                                            </div>
+                                            <div class="table-stats order-table ov-h">
+                                                <table class="table">
+                                                    <tbody> 
+                                                        <tr>
+                                                            <td class="avatar">
+                                                                <div class="round-img">
+                                                                    <a href="client-profile.html"><img class="rounded-circle" src="images/client.png" alt=""></a>
+                                                                </div>
+                                                            </td>
+                                                            <td>  <a href="client-profile.html"><span class="name">Claudia Cee</span><br><span class="text-secondary">Large Loss in Investments</span></a> </td> 
+                                                            <td> <span class="product text-danger">+16.35%</span><br><span class="text-secondary">YTD Performance</span> </td>
+                                                            <td><a href="client-profile.html"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-file"></span><br>Review</span></a><span class="btn ml-1 px-2 btn-sm btn-teal"><span class="fa fa-phone"></span><br>Call</span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="avatar">
+                                                                <div class="round-img">
+                                                                    <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a> 
+                                                                </div>
+                                                            </td> 
+                                                            <td>  <span class="name">Mischa Carpenter</span><br><span class="text-secondary">Portfolio Review Needed </span> </td> 
+                                                            <td> <span class="product text-danger">-1.92%</span><br><span class="text-secondary">MTD Performance</span> </td>
+                                                            <td><span class="btn btn-sm btn-outline-teal"><span class="fa fa-file"></span><br>Review</span><span class="btn ml-1 px-2 btn-sm btn-teal"><span class="fa fa-phone"></span><br>Call</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="avatar">
+                                                                <div class="round-img">
+                                                                    <a href="#"><img class="rounded-circle" src="images/160801.jpg" alt=""></a> 
+                                                                </div>
+                                                            </td>
+                                                            <td>  <span class="name">Viktor Nikiforov</span><br><span class="text-secondary">Large Loss in Investments</span> </td> 
+                                                            <td> <span class="product text-danger">-3.45%</span><br><span class="text-secondary">YTD Performance</span> </td>
+                                                            <td><span class="btn btn-sm btn-outline-teal"><span class="fa fa-file"></span><br>Review</span><span class="btn ml-1 px-2 btn-sm btn-teal"><span class="fa fa-phone"></span><br>Call</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="avatar">
+                                                                <div class="round-img">
+                                                                    <a href="#"><img class="rounded-circle" src="images/160701.jpg" alt=""></a> 
+                                                                </div>
+                                                            </td>
+                                                            <td>  <span class="name">Will Graham</span><br><span class="text-secondary">Portfolio Review Needed </span> </td> 
+                                                            <td> <span class="product text-danger">-1.85%</span><br><span class="text-secondary">MTD Performance</span> </td>
+                                                            <td><span class="btn btn-sm btn-outline-teal"><span class="fa fa-file"></span><br>Review</span><span class="btn ml-1 px-2 btn-sm btn-teal"><span class="fa fa-phone"></span><br>Call</span></td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- /.table-stats -->
+                                        </div>
+                                    </div>
+    
+                                </div>
                             </div>
                         </div> <!-- /.card -->
                         <!-- Mailbox -->
+                        <h2 class="black-header">Focused Inbox</h2>
+                        <img class="mb-4 card" src="images/Inbox.png" alt="" style="width: 100%;">
+                        <!-- Products -->
+                        <h2 class="black-header">Hot Products and Services</h2>
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title box-title">To Do List</h4>
-                                <div class="card-content">
-                                    <div class="todo-list">
-                                        <div class="tdl-holder">
-                                            <div class="tdl-content">
-                                                <ul>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox"><i class="check-box"></i><span>Conveniently fabricate interactive technology for ....</span> 
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox"><i class="check-box"></i><span>Creating component page</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Follow back those who follow you</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Design One page theme</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-    
-                                                    <li>
-                                                        <label>
-                                                            <input type="checkbox" checked><i class="check-box"></i><span>Creating component page</span>
-                                                            <a href='#' class="fa fa-times"></a>
-                                                            <a href='#' class="fa fa-pencil"></a>
-                                                            <a href='#' class="fa fa-check"></a>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div> 
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="float-left" style="width: 25%;">
+                                                    <img src="images/retire.png" alt="Card image cap" height="140px">
+                                                </div>
+                                                <div class="float-right p-3" style="width: 75%;">
+                                                    <h4 class="card-title mb-1">RetireHappy &nbsp;<span class="text-secondary" style="font-size: 0.8em;">Retirement Planning</span></h4>
+                                                    <p class="card-text table-header mb-1">The first inflation-adjusted retirement plan income plan. It means your retirement income will grow at a rate of 3.5% each year to…</p>
+                                                    <img class="small-thumbnail-back" src="images/160601.jpg" alt="thumbnail">
+                                                    <img class="small-thumbnail-front" src="images/160602.jpg" alt="thumbnail">
+                                                    <span class="mb-3 text-teal" style="font-size: 0.7em;">Recommended for Cautious Retirees: Nancy Green and 98 others</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div> <!-- /.todo-list -->
-                                </div>
-                            </div> <!-- /.card-body -->
-                        </div><!-- /.card -->
-                        <!-- Products -->
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder-2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="float-left" style="width: 25%;">
+                                                    <img src="images/globalcare.png" alt="Card image cap"  height="140px">
+                                                </div>
+                                                <div class="float-right p-3" style="width: 75%;">
+                                                    <h4 class="card-title mb-1">GlobalCare &nbsp;<span class="text-secondary" style="font-size: 0.8em;">Health Insurance</span></h4>
+                                                    <p class="card-text table-header mb-1">A comprehensive International Health insurance plan that offers coverage for hospitalisation, outpatient treatments, maternity… </p>
+                                                    <img class="small-thumbnail-back" src="images/160603.jpg" alt="thumbnail">
+                                                    <img class="small-thumbnail-front" src="images/160701.jpg" alt="thumbnail">
+                                                    <span class="mb-3 text-teal" style="font-size: 0.7em;">Recommended for Cautious Retirees: Jane Doe and 98 others</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/placeholder-3.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Card Image Title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="float-left" style="width: 25%;">
+                                                    <img src="images/capital.png" alt="Card image cap"  height="140px">
+                                                </div>
+                                                <div class="float-right p-3" style="width: 75%;">
+                                                    <h4 class="card-title mb-1">Structured Capital &nbsp;<span class="text-secondary" style="font-size: 0.8em;">Variable Annuity</span></h4>
+                                                    <p class="card-text table-header mb-1">A variable and index-linked deferred annuity contract designed for investors looking to partially protect their assets as well as growth</p>
+                                                    <img class="small-thumbnail-back" src="images/160702.jpg" alt="thumbnail">
+                                                    <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                                                    <span class="mb-3 text-teal" style="font-size: 0.7em;">Recommended for Digital Natives: John Doe and 98 others</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mb-0">
+                                            <div class="card-body p-0">
+                                                <div class="float-left" style="width: 25%;">
+                                                    <img src="images/brightlife.png" alt="Card image cap"  height="140px">
+                                                </div>
+                                                <div class="float-right p-3" style="width: 75%;">
+                                                    <h4 class="card-title mb-1">BrightLife &nbsp;<span class="text-secondary" style="font-size: 0.8em;">Life Insurance</span></h4>
+                                                    <p class="card-text table-header mb-1">A flexible-premium universal life insurance policy that provides for potential cash value growth through an interest crediting linked to</p>
+                                                    <img class="small-thumbnail-back" src="images/160801.jpg" alt="thumbnail">
+                                                    <img class="small-thumbnail-front" src="images/160802.jpg" alt="thumbnail">
+                                                    <span class="mb-3 text-teal" style="font-size: 0.7em;">Recommended for Naive Investors: Paul Smith and 98 others</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>  <!-- /.col-lg-7 -->
 
-                    <div class="col-md-12 col-lg-5">
+                    <div class="col-xl-5">
                         <!-- Calendar -->
+                        <h2 class="black-header">Planner</h2>
                         <div class="card">
                             <div class="card-body">  
-                                <!-- <h4 class="box-title">Chandler</h4> -->
+                                <a href="client-profile.html"><img class="mb-4" src="images/calendar.png" alt=""></a>
                                 <div class="calender-cont widget-calender">
                                     <div id="calendar"></div>
                                 </div>
                             </div>
                         </div><!-- /.card -->
+
                         <!-- News -->
+                        <h2 class="black-header">Market News</h2>
                         <div class="card">
-                            <div class="card-header">
-                                <h4>Custom Tab</h4>
-                            </div>
-                            <div class="card-body">
+                            <div class="card-body p-0">
                                 <div class="custom-tab">
 
                                     <nav>
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                            <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
-                                            <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
-                                            <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                            <a class="px-3 py-2 nav-item nav-link active" id="custom-nav-trending-tab" data-toggle="tab" href="#custom-nav-trending" role="tab" aria-controls="custom-nav-trending" aria-selected="true">Trending</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-world-tab" data-toggle="tab" href="#custom-nav-world" role="tab" aria-controls="custom-nav-world" aria-selected="false">World</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-category-tab" data-toggle="tab" href="#custom-nav-category" role="tab" aria-controls="custom-nav-category" aria-selected="false">Category</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Recommendation</a>
                                         </div>
                                     </nav>
                                     <div class="tab-content pl-3 pt-2" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            <div class="table-stats order-table ov-h">
+                                                <table class="table">
+                                                    <tbody> 
+                                                        <tr>
+                                                            <td class="p-0">
+                                                                <img class="m-0" src="images/avatar/2.jpg" alt="">
+                                                            </td>
+                                                            <td class="px-2">  <span class="table-header">Asia funds on the rise in Consistent 50</span><br><span class="text-secondary table-text">Investment Week and Morningstar's latest look at the most consistent fund </span><br><span class="table-text text-teal">#asiapacific #data-analysis</span> </td> 
+                                                            <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-0">
+                                                                <img class="m-0" src="images/avatar/3.jpg" alt="">
+                                                            </td> 
+                                                            <td class="px-2">  <span class="table-header">US Economy expands faster than expectations</span><br><span class="text-secondary table-text">The US economy expanded at a rate of 3.5% in Q3, down from 4.2% seen </span><br><span class="table-text text-teal">#us-economy #data-analysis</span> </td> 
+                                                            <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-0">
+                                                                <img class="m-0" src="images/160801.jpg" alt="">
+                                                            </td>
+                                                            <td class="px-2">  <span class="table-header">Seoul to pour $440m into propping up stock market</span><br><span class="text-secondary table-text">Moves echoes other Asia efforts and comes as benchmark index faces worst </span><br><span class="table-text text-teal">#asiapacific #equities #dataanalysis</span> </td> 
+                                                            <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-0">
+                                                                <img class="m-0" src="images/160701.jpg" alt="">
+                                                            </td>
+                                                            <td class="px-2">  <span class="table-header">Robo advisors short circuit over ethical investing</span><br><span class="text-secondary table-text">Providers differ over whether the fledgling market can form basis of </span><br><span class="table-text text-teal">#invest #AI</span> </td> 
+                                                            <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- /.table-stats -->
                                         </div>
-                                        <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!-- /.card -->
+
+                        <h2 class="black-header">Portfolio Performances</h2>
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="custom-tab">
+
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="px-3 py-2 nav-item nav-link active" id="custom-nav-trending-tab" data-toggle="tab" href="#custom-nav-trending" role="tab" aria-controls="custom-nav-trending" aria-selected="true">Top Gainers</a>
+                                            <a class="px-3 py-2 nav-item nav-link" id="custom-nav-world-tab" data-toggle="tab" href="#custom-nav-world" role="tab" aria-controls="custom-nav-world" aria-selected="false">Top Losers</a>
                                         </div>
-                                        <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
-                                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                    </nav>
+                                    <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
+                                            <div class="table-stats order-table ov-h">
+                                                <table class="table">
+                                                    <tbody> 
+                                                        <tr>
+                                                            <td class="px-2">  <span class="table-header">BHB Billiton Limited</span><br>
+                                                                <span class="text-secondary">Materials Sector</span> </td>
+                                                            <td><span class="text-teal">68.5 (+1.38%)</span></td>
+                                                            <td><img src="images/portfolio-graph.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="px-2">  <span class="table-header">CSL Limited</span><br>
+                                                                <span class="text-secondary">Health Sector</span> </td> 
+                                                            <td><span class="text-teal">122.5 (+0.78%)</span></td>
+                                                            <td><img src="images/portfolio-graph2.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="px-2">  <span class="table-header">iShares</span><br>
+                                                                <span class="text-secondary">Equity </span> </td> 
+                                                            <td><span class="text-teal">51.7 (+1.91%)</span></td>
+                                                            <td><img src="images/portfolio-graph.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="px-2">  <span class="table-header">Nicco AM Global Share</span><br>
+                                                                <span class="text-secondary">Energy Sector </span> </td>
+                                                            <td><span class="text-teal">45.2 (+2.01%)</span></td>
+                                                            <td><img src="images/portfolio-graph2.png" alt=""></td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- /.table-stats -->
                                         </div>
                                     </div>
 
@@ -554,12 +608,12 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title"><strong>Add New Event</strong></h4>
+                            <h4 class="modal-title"><strong>Add New Appointment</strong></h4>
                         </div>
                         <div class="modal-body"></div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success save-event waves-effect waves-light">Create event</button>
+                            <button type="button" class="btn btn-outline-teal waves-effect" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-teal save-event waves-effect waves-light">Create event</button>
                             <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Delete</button>
                         </div>
                     </div>

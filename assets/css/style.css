@@ -2022,6 +2022,19 @@ input:checked + .slider:before {
   margin-bottom: 20px;
 }
 
+.table-header {
+  font-size: 11px;
+}
+
+.table-text {
+  font-size: 10px;
+  width: 250px;
+  text-overflow: ellipsis; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  display: inline-block;
+}
+
 .oppt {
   width: 90%;
   margin: 10px 0;
