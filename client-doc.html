@@ -1,0 +1,499 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X-Wealth | Claudia Cee</title>
+    <meta name="description" content="Wealth Management">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
+
+
+    <link href="assets/calendar/fullcalendar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="assets/css/charts/chartist.min.css" rel="stylesheet">  -->
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet"> 
+
+</head>
+<body>
+
+
+    <!-- Left Panel --> 
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default"> 
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="overview.html"><i class="menu-icon fa fa-dashboard"></i>Overview </a>
+                    </li>
+                    <li class="active">
+                        <a href="clients.html"><i class="menu-icon fa fa-users"></i>Clients</a>
+                    </li>
+                    <li>
+                        <a href="ifttt.html"><i class="menu-icon fa fa-calculator"></i>IFTTT</a>
+                    </li>
+                    <li>
+                        <a href="activities.html"> <i class="menu-icon fa fa-child"></i>Activities</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel --> 
+    <!-- Left Panel -->
+
+
+
+    <!-- Right Panel --> 
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">  
+            <div class="top-left">
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="./overview.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a> 
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> 
+                </div> 
+            </div>
+            <div class="top-right"> 
+                <div class="header-menu"> 
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-envelope"></i>
+                                <span class="count bg-primary">4</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Claudia Cee's passport updated.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Arul Kumar's Birthday tomorrow</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Ronald Tramp's Birthday yesterday</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <div class="user-name">John Smith</div>
+                            <i class="fa fa-caret-down pr-2"></i>
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+
+                            <a class="nav-link" href="client-mode.html"><i class="fa fa-exchange"></i>Switch mode</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
+
+                            <a class="nav-link" href="index.html"><i class="fa fa-sign-out"></i>Logout</a>
+                        </div>
+                    </div>
+                    <div class="header-left">
+                        <div class="dropdown for-alexa">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="alexa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-microphone"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="float-left text-white"><img class="mr-3" src="images/alexa.png" alt="alexa">Hi, I'm listening...</p>
+                                <div class="float-right mr-3 text-teal">
+                                    <i class="fa fa-close"></i>
+                                </div>
+                                <div class="animation">
+                                    <img src="images/Alexa-Listening-Waves.gif" alt="listening">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+        
+
+        <div class="profile-content">
+            <!-- Profile panel -->
+            <div class="profile-panel content">
+                <p class="py-3" style="font-size: 0.8em;">All Clients > Claudia Cee</p>
+                <div class="mx-auto d-block">
+                    <img class="rounded-circle mx-auto d-block" src="images/client.png" alt="Client" style="widows: 100px;px; height:100px;">
+                    <h5 class="text-center mt-2 mb-1 font-weight-bold text-uppercase">Claudia Cee</h5>
+                    <div class="text-center text-black-50 pb-4" style="font-size: 0.8em;">High Revenue Pre-retiree</div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-phone"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-commenting"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-envelope"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-whatsapp"></i></a></div>
+                    <div class="col-6">
+                        <div class="text-left text-teal fade-5 mt-2" style="font-size: 0.6em;">Most <br>Preferred</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-right text-teal fade-5 mt-2" style="font-size: 0.6em;">Least <br>Preferred</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 pt-3">
+                        <h6>Age</h6>
+                        <p>46</p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>Country</h6>
+                        <p>Singapore</p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>Nationality</h6>
+                        <p>Australian</p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>Occupation</h6>
+                        <p>Business Owner</p>
+                    </div>
+                    <div class="col-12 pt-3 text-center">
+                        <span class="btn btn-outline-teal">More Details</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="pt-4">
+                    <span class="btn btn-sm btn-danger border-0"><i class="fa fa-long-arrow-up"></i> High Priority</span>
+                    <p class="pt-3 text-secondary">Sharp drop in Tesla prices affecting Claudia's new electric car venture</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-phone"></i> &nbsp; Call Claudia</span></a> 
+                </div>
+                <div class="pt-5">
+                    <span class="btn btn-sm btn-danger bg-flat-color-4 border-0"><i class="fa fa-minus"></i> Medium Priority</span>
+                    <p class="pt-3 text-secondary">Risk Tolerance Review with Claudia Cee</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Book Appointment</span></a>
+                </div>
+                <hr>
+                <div class="pt-4">
+                    <span class="btn btn-sm btn-secondary border-0">Opportunity</span>
+                    <p class="pt-3 text-secondary">Provide Mortgage Options</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Book Appointment</span></a>
+                </div>
+                <div class="pt-5">
+                    <span class="btn btn-sm btn-secondary border-0">Opportunity</span>
+                    <p class="pt-3 text-secondary">Join Claudia's Yoga Class this Thursday 7pm</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Add to Calendar</span></a>
+                </div>
+            </div>
+
+            <div class="content float-none pb-0">
+                <!-- Widgets  -->
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="client-profile.html"><div class="card text-secondary">
+                            <div class="card-body text-center">
+                                <img src="images/portfolio-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
+                                <div class="pt-1">
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">PORTFOLIO</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!--/.col-->
+                    
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="client-analysis.html"><div class="card text-secondary">
+                            <div class="card-body text-center">
+                                <img src="images/insights-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
+                                <div class="pt-1">
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">PREDICTIVE ANALYSIS</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!--/.col-->
+    
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="client-comms.html"><div class="card text-secondary">
+                            <div class="card-body text-center">
+                                <img src="images/comms-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
+                                <div class="pt-1">
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">COMMUNICATION</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!--/.col-->
+    
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="#"><div class="card text-secondary">
+                            <div class="card-body text-center">
+                                <img src="images/doc-logo.png" alt="" style="height: 60px; width: 60px;">
+                                <div class="pt-1">
+                                    <p class="mt-1 m-0 text-dark font-weight-bold" style="font-size: 0.8em;">DOCUMENTS</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!--/.col-->
+                    
+                </div> 
+                <!-- Widgets End -->
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="black-header">Shared Document Vault</h2>
+                        </div>
+
+                    </div> 
+                </div>
+            </div>
+            
+
+            <div class="modal fade none-border" id="event-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><strong>Add New Event</strong></h4>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success save-event waves-effect waves-light">Create event</button>
+                            <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Add Category -->
+            <div class="modal fade none-border" id="add-category">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><strong>Add a category </strong></h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Category Name</label>
+                                        <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">Choose Category Color</label>
+                                        <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
+                                            <option value="success">Success</option>
+                                            <option value="danger">Danger</option>
+                                            <option value="info">Info</option>
+                                            <option value="pink">Pink</option>
+                                            <option value="primary">Primary</option>
+                                            <option value="warning">Warning</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger waves-effect waves-light save-category" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL -->
+
+
+
+            
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+        </div> <!-- .content -->
+
+    </div><!-- /#right-panel -->
+
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <!--Chartist Chart-->
+
+    <script src="assets/js/lib/moment/moment.js"></script>
+    <script src="assets/calendar/fullcalendar.min.js"></script>
+    <script src="assets/calendar/fullcalendar-init.js"></script>
+
+    <!--Flot Chart-->
+
+    <script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
+    <script src="assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
+
+    <script src="assets/js/widgets.js"></script>
+
+    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/vector.init.js"></script>
+
+    <!--  Chart js -->
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script>
+    //doughut chart
+    var ctx = document.getElementById( "doughutChart" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [ {
+                data: [ 16, 8, 21, 35 ],
+                backgroundColor: [
+                                    "#FF686C",
+                                    "#3C8783",
+                                    "#375A64",
+                                    "#A1D4D2"
+                                ],
+                hoverBackgroundColor: [
+                                    "#cf4448",
+                                    "#276d69",
+                                    "#185350",
+                                    "#A1D4D2"
+                                ]
+
+                            } ],
+            labels: [
+                            "Equities",
+                            "Fixed Income",
+                            "Cash",
+                            "Bonds"
+                        ]
+        },
+        options: {
+            responsive: true
+        }
+    } );
+    //line chart
+    var ctx = document.getElementById( "lineChart" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'line',
+        data: {
+            labels: [ "January", "February", "March", "April", "May", "June", "July" ],
+            datasets: [
+                {
+                    label: "Networth",
+                    borderColor: "#3C8783",
+                    borderWidth: "2",
+                    backgroundColor: "rgba(0,10,0,.01)",
+                    data: [ 60, 47, 35, 43, 65, 45, 35 ]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            }
+
+        }
+    } );
+    </script>
+
+
+<div id="container">
+  
+ 
+  
+</div>
+
+
+
+</body>
+</html>

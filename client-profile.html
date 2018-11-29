@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link href="assets/css/charts/chartist.min.css" rel="stylesheet">  -->
-    <!-- <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">  -->
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet"> 
 
 </head>
 <body>
@@ -35,15 +35,11 @@
         <nav class="navbar navbar-expand-sm navbar-default"> 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <a href="overview.html"><i class="menu-icon fa fa-dashboard"></i>Overview </a>
                     </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Clients</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><a href="clients.html">All Clients</a></li>
-                            <li><a href="client-profile.html">Claudia Cee</a></li>
-                        </ul>
+                    <li class="active">
+                        <a href="clients.html"><i class="menu-icon fa fa-users"></i>Clients</a>
                     </li>
                     <li>
                         <a href="ifttt.html"><i class="menu-icon fa fa-calculator"></i>IFTTT</a>
@@ -192,28 +188,64 @@
                 <p class="py-3" style="font-size: 0.8em;">All Clients > Claudia Cee</p>
                 <div class="mx-auto d-block">
                     <img class="rounded-circle mx-auto d-block" src="images/client.png" alt="Client" style="widows: 100px;px; height:100px;">
-                    <h5 class="text-sm-center mt-2 mb-1 font-weight-bold text-uppercase">Claudia Cee</h5>
-                    <div class="text-sm-center text-black-50 pb-4">High Revenue Pre-retiree</div>
+                    <h5 class="text-center mt-2 mb-1 font-weight-bold text-uppercase">Claudia Cee</h5>
+                    <div class="text-center text-black-50 pb-4" style="font-size: 0.8em;">High Revenue Pre-retiree</div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-phone"></i></a></div>
-                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-envelope"></i></a></div>
-                    <div class="col-4"><a class="text-teal" href="#"><i class="fa fa-bell"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-phone"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-commenting"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-envelope"></i></a></div>
+                    <div class="col-3"><a class="text-teal" href="#"><i class="fa fa-whatsapp"></i></a></div>
+                    <div class="col-6">
+                        <div class="text-left text-teal fade-5 mt-2" style="font-size: 0.6em;">Most <br>Preferred</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-right text-teal fade-5 mt-2" style="font-size: 0.6em;">Least <br>Preferred</div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-12 pt-3">
-                        <h6>Networth</h6>
-                        <p>8.67M</p>
+                        <h6>Age</h6>
+                        <p>46</p>
                     </div>
                     <div class="col-12 pt-3">
-                        <h6>YTD Performance</h6>
-                        <p class="text-danger">-2.51%</p>
+                        <h6>Country</h6>
+                        <p>Singapore</p>
                     </div>
                     <div class="col-12 pt-3">
-                        <h6>Opportunities</h6>
-                        <p>2 Products & 3 Activities</p>
+                        <h6>Nationality</h6>
+                        <p>Australian</p>
                     </div>
+                    <div class="col-12 pt-3">
+                        <h6>Occupation</h6>
+                        <p>Business Owner</p>
+                    </div>
+                    <div class="col-12 pt-3 text-center">
+                        <span class="btn btn-outline-teal">More Details</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="pt-4">
+                    <span class="btn btn-sm btn-danger border-0"><i class="fa fa-long-arrow-up"></i> High Priority</span>
+                    <p class="pt-3 text-secondary">Sharp drop in Tesla prices affecting Claudia's new electric car venture</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-phone"></i> &nbsp; Call Claudia</span></a> 
+                </div>
+                <div class="pt-5">
+                    <span class="btn btn-sm btn-danger bg-flat-color-4 border-0"><i class="fa fa-minus"></i> Medium Priority</span>
+                    <p class="pt-3 text-secondary">Risk Tolerance Review with Claudia Cee</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Book Appointment</span></a>
+                </div>
+                <hr>
+                <div class="pt-4">
+                    <span class="btn btn-sm btn-secondary border-0">Opportunity</span>
+                    <p class="pt-3 text-secondary">Provide Mortgage Options</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Book Appointment</span></a>
+                </div>
+                <div class="pt-5">
+                    <span class="btn btn-sm btn-secondary border-0">Opportunity</span>
+                    <p class="pt-3 text-secondary">Join Claudia's Yoga Class this Thursday 7pm</p>
+                    <a href="#"><span class="btn-sm text-teal"><i class="fa fa-calendar"></i> &nbsp; Add to Calendar</span></a>
                 </div>
             </div>
 
@@ -223,9 +255,9 @@
                     <div class="col-sm-6 col-lg-3">
                         <a href="#"><div class="card text-secondary">
                             <div class="card-body text-center">
-                                <i class="icon fade-5 icon-lg pe-7f-portfolio"></i>
+                                <img src="images/portfolio-logo.png" alt="" style="height: 60px; width: 60px;">
                                 <div class="pt-1">
-                                    <p class="mt-1 m-0">PORTFOLIO</p>
+                                    <p class="mt-1 m-0 text-dark font-weight-bold" style="font-size: 0.8em;">PORTFOLIO</p>
                                 </div>
                             </div>
                         </div></a>
@@ -233,11 +265,11 @@
                     <!--/.col-->
                     
                     <div class="col-sm-6 col-lg-3">
-                        <a href="#"><div class="card text-secondary">
+                        <a href="client-analysis.html"><div class="card text-secondary">
                             <div class="card-body text-center">
-                                <i class="icon fade-5 icon-lg pe-7f-search"></i>
+                                <img src="images/insights-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
                                 <div class="pt-1">
-                                    <p class="mt-1 m-0">PREDICTIVE ANALYSIS</p>
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">PREDICTIVE ANALYSIS</p>
                                 </div>
                             </div>
                         </div></a>
@@ -245,11 +277,11 @@
                     <!--/.col-->
     
                     <div class="col-sm-6 col-lg-3">
-                        <a href="#"><div class="card text-secondary">
+                        <a href="client-comms.html"><div class="card text-secondary">
                             <div class="card-body text-center">
-                                <i class="icon fade-5 icon-lg pe-7f-headphones"></i>
+                                <img src="images/comms-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
                                 <div class="pt-1">
-                                    <p class="mt-1 m-0">COMMUNICATION</p>
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">COMMUNICATION</p>
                                 </div>
                             </div>
                         </div></a>
@@ -257,11 +289,11 @@
                     <!--/.col-->
     
                     <div class="col-sm-6 col-lg-3">
-                        <a href="#"><div class="card text-secondary">
+                        <a href="client-doc.html"><div class="card text-secondary">
                             <div class="card-body text-center">
-                                <i class="icon fade-5 icon-lg pe-7f-file"></i>
+                                <img src="images/doc-logo-disabled.png" alt="" style="height: 60px; width: 60px;">
                                 <div class="pt-1">
-                                    <p class="mt-1 m-0">DOCUMENTS</p>
+                                    <p class="mt-1 m-0" style="font-size: 0.8em;">DOCUMENTS</p>
                                 </div>
                             </div>
                         </div></a>
@@ -283,23 +315,49 @@
     
                                         <nav>
                                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
-                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
-                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Asset Class</a>
+                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Geography</a>
+                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Category</a>
                                             </div>
                                         </nav>
                                         <div class="tab-content pl-3 pt-2" id="nav-tabContent">
                                             <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                            
+                                                <div class="pt-4 text-center" style="height:320px;">
+                                                    <canvas id="doughutChart" style="max-width: 550px; max-height: 280px;"></canvas>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <div class="Vector-map-js">
+                                                    <div id="vmap" class="vmap" style="width: 35vw; height:320px;"></div>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <div class="row pt-5" style="height:320px;">
+                                                    <div class="col-md-4">
+                                                        <div class="card" style="max-height:240px;">
+                                                            <img class="card-img-top" src="images/tech.png" alt="Card image cap">
+                                                            <div class="card-body">
+                                                                <p class="card-text text-center" style="font-size: 0.8em;">Unrealised P&L <br><span class="btn btn-teal mt-3" style="font-size: 0.9em;">1.2% <i class="fa fa-caret-up"></i> </span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card" style="max-height:240px;">
+                                                            <img class="card-img-top" src="images/skeleton.png" alt="Card image cap">
+                                                            <div class="card-body">
+                                                                <p class="card-text text-center" style="font-size: 0.8em;">Unrealised P&L <br><span class="btn btn-danger bg-negative mt-3" style="font-size: 0.9em;">3.2% <i class="fa fa-caret-down"></i> </span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card" style="max-height:240px;">
+                                                            <img class="card-img-top" src="images/Energy.png" alt="Card image cap">
+                                                            <div class="card-body">
+                                                                <p class="card-text text-center" style="font-size: 0.8em;">Unrealised P&L <br><span class="btn btn-danger bg-negative mt-3" style="font-size: 0.9em;">0.9% <i class="fa fa-caret-down"></i> </span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
     
@@ -307,66 +365,67 @@
                                 </div>
                             </div><!-- /.card -->
                         </div>  <!-- /.col-lg-8 -->
-    
+                        
+                        <!-- Stats -->
                         <div class="col-md-12 col-lg-4">
                             <div class="card text-white bg-negative">
-                                <div class="card-body">
+                                <div class="py-2 px-3">
                                     <div class="card-left pt-1 float-left">
                                         <i class="fa fade-5 fa-3x fa-dollar"></i>
                                     </div><!-- /.card-left -->
         
                                     <div class="card-right float-right">
-                                        <p class="text-light mt-1 m-0">Net Worth</p>
+                                        <p class="text-light m-0" style="font-size: 0.7em;">Net Worth</p>
                                         <h3 class="mb-0 fw-r">
-                                            <span class="count">8.6</span>
-                                            <span class="">m</span>
+                                            <span class="count" style="font-size: 0.7em;">8.6</span>
+                                            <span style="font-size: 0.7em;">m</span>
                                         </h3>
                                     </div><!-- /.card-right -->
                                 </div>        
                             </div>
                             <div class="card text-white bg-positive">
-                                <div class="card-body">
+                                <div class="py-2 px-3">
                                     <div class="card-left pt-1 float-left">
                                         <i class="fa fade-5 fa-3x fa-pie-chart"></i>
                                     </div><!-- /.card-left -->
         
                                     <div class="card-right float-right">
-                                        <p class="text-light mt-1 m-0">New Assets</p>
+                                        <p class="text-light m-0" style="font-size: 0.7em;">New Assets</p>
                                         <h3 class="mb-0 fw-r">
                                             <span class="float-left mr-1">-</span>
-                                            <span class="count">2.6</span>
+                                            <span class="count" style="font-size: 0.7em;">2.6</span>
                                         </h3>
                                     </div><!-- /.card-right -->
                                 </div>        
                             </div>
                             <div class="card text-white bg-positive">
-                                <div class="card-body">
+                                <div class="py-2 px-3">
                                     <div class="card-left pt-1 float-left">
                                         <i class="fa fade-5 fa-3x fa-line-chart"></i>
                                     </div><!-- /.card-left -->
         
                                     <div class="card-right float-right">
-                                        <p class="text-light mt-1 m-0">AUM</p>
+                                        <p class="text-light m-0" style="font-size: 0.7em;">AUM</p>
                                         <h3 class="mb-0 fw-r">
                                             <span class="float-left mr-1">-</span>
-                                            <span class="count">87</span>
-                                            <span class="">k</span>
+                                            <span class="count" style="font-size: 0.7em;">87</span>
+                                            <span style="font-size: 0.7em;">k</span>
                                         </h3>
                                     </div><!-- /.card-right -->
                                 </div>        
                             </div>
                             <div class="card text-white bg-negative">
-                                <div class="card-body">
+                                <div class="py-2 px-3">
                                     <div class="card-left pt-1 float-left">
                                         <i class="fa fade-5 fa-3x fa-bank"></i>
                                     </div><!-- /.card-left -->
         
                                     <div class="card-right float-right">
-                                        <p class="text-light mt-1 m-0">Return</p>
+                                        <p class="text-light m-0" style="font-size: 0.7em;">Return</p>
                                         <h3 class="mb-0 fw-r">
                                             <span class="float-left mr-1">-</span>
-                                            <span class="count">87</span>
-                                            <span class="">k</span>
+                                            <span class="count" style="font-size: 0.7em;">87</span>
+                                            <span style="font-size: 0.7em;">k</span>
                                         </h3>
                                     </div><!-- /.card-right -->
                                 </div>        
@@ -383,21 +442,18 @@
     
                                         <nav>
                                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
-                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
-                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                                <a class="px-3 py-2 nav-item nav-link active" id="custom-nav-all-tab" data-toggle="tab" href="#custom-nav-all" role="tab" aria-controls="custom-nav-home" aria-selected="true">All Time</a>
+                                                <a class="px-3 py-2 nav-item nav-link" id="custom-nav-year-tab" data-toggle="tab" href="#custom-nav-year" role="tab" aria-controls="custom-nav-year" aria-selected="false">Year</a>
+                                                <a class="px-3 py-2 nav-item nav-link" id="custom-nav-month-tab" data-toggle="tab" href="#custom-nav-month" role="tab" aria-controls="custom-nav-month" aria-selected="false">Month</a>
+                                                <a class="px-3 py-2 nav-item nav-link" id="custom-nav-week-tab" data-toggle="tab" href="#custom-nav-week" role="tab" aria-controls="custom-nav-week" aria-selected="false">Week</a>
+                                                <a class="px-3 py-2 nav-item nav-link" id="custom-nav-today-tab" data-toggle="tab" href="#custom-nav-today" role="tab" aria-controls="custom-nav-today" aria-selected="false">Today</a>
                                             </div>
                                         </nav>
                                         <div class="tab-content pl-3 pt-2" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                            <div class="tab-pane fade show active" id="custom-nav-all" role="tabpanel" aria-labelledby="custom-nav-all-tab">
+                                                <div class="pt-4 text-center" style="height:320px;">
+                                                    <canvas id="lineChart" style="max-width: 550px; max-height: 280px;"></canvas>
+                                                </div>
                                             </div>
                                         </div>
     
@@ -409,141 +465,128 @@
                         <div class="col-md-12 col-lg-4">
                             <h2 class="black-header">Risk Score</h2>
                             <div class="card">
-                                <img class="card-img-top" src="images/placeholder-2.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-3">Card Image Title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-center">
+                                    <img style="height: 405px; width: 300px;" src="images/Risk-Score.png" alt="Card image cap">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-12 col-lg-6">
                             <h2 class="black-header">IFTTT</h2>
-                            <div class="card">
-                                <div>
-                                    <div class="table-stats order-table ov-h">
-                                        <table class="table ">
-                                            <thead>
-                                                <tr>
-                                                    <th class="serial">#</th>
-                                                    <th class="avatar">Avatar</th>
-                                                    <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Product</th>
-                                                    <th>Quantity</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody> 
-                                                <tr>
-                                                    <td class="serial">1.</td>
-                                                    <td class="avatar">
-                                                        <div class="round-img">
-                                                            <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
-                                                        </div>
-                                                    </td>
-                                                    <td> #5469 </td>
-                                                    <td>  <span class="name">Louis Stanley</span> </td> 
-                                                    <td> <span class="product">iMax</span> </td>
-                                                    <td><span class="count">231</span></td>
-                                                    <td> 
-                                                        <span class="badge badge-complete">Complete</span>
-                                                    </td> 
-                                                </tr>
-                                                <tr>
-                                                    <td class="serial">2.</td>
-                                                    <td class="avatar">
-                                                        <div class="round-img">
-                                                            <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a> 
-                                                        </div>
-                                                    </td> 
-                                                    <td> #5468 </td>
-                                                    <td>  <span class="name">Gregory Dixon</span> </td> 
-                                                    <td> <span class="product">iPad</span> </td>
-                                                    <td><span class="count">250</span></td>
-                                                    <td> 
-                                                        <span class="badge badge-complete">Complete</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="serial">3.</td>
-                                                    <td class="avatar">
-                                                        <div class="round-img">
-                                                            <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a> 
-                                                        </div>
-                                                    </td>
-                                                    <td> #5467 </td>
-                                                    <td>  <span class="name">Catherine Dixon</span> </td> 
-                                                    <td> <span class="product">SSD</span> </td>
-                                                    <td><span class="count">250</span></td>
-                                                    <td> 
-                                                        <span class="badge badge-complete">Complete</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="serial">4.</td>
-                                                    <td class="avatar">
-                                                        <div class="round-img">
-                                                            <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a> 
-                                                        </div>
-                                                    </td>
-                                                    <td> #5466 </td>
-                                                    <td>  <span class="name">Mary Silva</span> </td> 
-                                                    <td> <span class="product">Magic Mouse</span> </td>
-                                                    <td><span class="count">250</span></td>
-                                                    <td> 
-                                                        <span class="badge badge-pending">Pending</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class=" pb-0">
-                                                    <td class="serial">5.</td>
-                                                    <td class="avatar pb-0">
-                                                        <div class="round-img">
-                                                            <a href="#"><img class="rounded-circle" src="images/avatar/6.jpg" alt=""></a> 
-                                                        </div>
-                                                    </td>
-                                                    <td> #5465 </td>
-                                                    <td>  <span class="name">Johnny Stephens</span> </td> 
-                                                    <td> <span class="product">Monitor</span> </td>
-                                                    <td><span class="count">250</span></td>
-                                                    <td> 
-                                                        <span class="badge badge-complete">Complete</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div> <!-- /.table-stats -->
+                            <div class="card rule-card mb-5">
+                                <div class="card-body py-0">
+                                    <div class="row rules-text">
+                                        <!-- First -->
+                                        <div class="col-9 rules-side mb-1">
+                                            <p><span class="text-teal-light">Lost Prevention</span> <br>
+                                            <span class="text-teal">If</span> - <b class="text-dark">All Stocks</b> fall <b class="text-dark">below 7%</b> of purchase price<br><span class="text-teal">Then</span> - Sell All Stocks</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="switch float-right mt-3">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <!-- Second -->
+                                        <div class="col-9 rules-side mb-1">
+                                            <p><span class="text-teal-light">Earnings</span> <br>
+                                            <span class="text-teal">If</span> - <b class="text-dark">NFLX</b> earnings per share is <b class="text-dark">above $0.06</b><br><span class="text-teal">Then</span> - Buy NFLX</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="switch float-right mt-3">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <!-- Third -->
+                                        <div class="col-9 rules-side mb-1">
+                                            <p><span class="text-teal-light">Anticipating Unexpected</span> <br>
+                                            <span class="text-teal">If</span> - <b class="text-dark">Fed Funds</b> interest rates is <b class="text-dark">below 0.05%</b><br><span class="text-teal">Then</span> - Buy SPY</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="switch float-right mt-3">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>                                        </div>
+                                        <!-- Fourth -->
+                                        <div class="col-9 rules-side mb-1">
+                                            <p><span class="text-teal-light">Inflation</span> <br>
+                                            <span class="text-teal">If</span> - <b class="text-dark">US Inflation Growth Rate</b> is <b class="text-dark">below 1.5%</b><br><span class="text-teal">Then</span> - Buy WMT</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="switch float-right mt-3">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>                                        </div>
+                                        <!-- Fifth -->
+                                        <div class="col-9 rules-side">
+                                            <p><span class="text-teal-light">Earnings</span> <br>
+                                            <span class="text-teal">If</span> - <b class="text-dark">APPL</b> earnings per share is <b class="text-dark">above $0.05</b><br><span class="text-teal">Then</span> - Buy AAPL</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="switch float-right mt-3">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>                                        </div>
+                                    </div>
                                 </div>
-                            </div> <!-- /.card -->
+                            </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <h2 class="black-header">Market News</h2>
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <div class="custom-tab">
     
                                         <nav>
                                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-item nav-link active" id="custom-nav-home-tab" data-toggle="tab" href="#custom-nav-home" role="tab" aria-controls="custom-nav-home" aria-selected="true">Home</a>
-                                                <a class="nav-item nav-link" id="custom-nav-profile-tab" data-toggle="tab" href="#custom-nav-profile" role="tab" aria-controls="custom-nav-profile" aria-selected="false">Profile</a>
-                                                <a class="nav-item nav-link" id="custom-nav-contact-tab" data-toggle="tab" href="#custom-nav-contact" role="tab" aria-controls="custom-nav-contact" aria-selected="false">Contact</a>
+                                                <a class="px-3 py-2 nav-item nav-link active" id="custom-nav-trending-tab" data-toggle="tab" href="#custom-nav-trending" role="tab" aria-controls="custom-nav-trending" aria-selected="true">Trending</a>
+                                                <a class="px-3 py-2 nav-item nav-link" id="custom-nav-category-tab" data-toggle="tab" href="#custom-nav-category" role="tab" aria-controls="custom-nav-category" aria-selected="false">Category</a>
                                             </div>
                                         </nav>
                                         <div class="tab-content pl-3 pt-2" id="nav-tabContent">
                                             <div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="custom-nav-profile" role="tabpanel" aria-labelledby="custom-nav-profile-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="custom-nav-contact" role="tabpanel" aria-labelledby="custom-nav-contact-tab">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, irure terry richardson ex sd. Alip placeat salvia cillum iphone. Seitan alip s cardigan american apparel, butcher voluptate nisi .</p>
+                                                <div class="table-stats order-table ov-h">
+                                                    <table class="table">
+                                                        <tbody> 
+                                                            <tr>
+                                                                <td class="p-0">
+                                                                    <img class="m-0" src="images/avatar/2.jpg" alt="">
+                                                                </td>
+                                                                <td class="px-2">  <span class="table-header">Asia funds on the rise in Consistent 50</span><br><span class="text-secondary table-text">Investment Week and Morningstar's latest look at the most consistent fund </span><br><span class="table-text text-teal">#asiapacific #data-analysis</span> </td> 
+                                                                <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="p-0">
+                                                                    <img class="m-0" src="images/avatar/3.jpg" alt="">
+                                                                </td> 
+                                                                <td class="px-2">  <span class="table-header">US Economy expands faster than expectations</span><br><span class="text-secondary table-text">The US economy expanded at a rate of 3.5% in Q3, down from 4.2% seen </span><br><span class="table-text text-teal">#us-economy #data-analysis</span> </td> 
+                                                                <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="p-0">
+                                                                    <img class="m-0" src="images/160801.jpg" alt="">
+                                                                </td>
+                                                                <td class="px-2">  <span class="table-header">Seoul to pour $440m into propping up stock market</span><br><span class="text-secondary table-text">Moves echoes other Asia efforts and comes as benchmark index faces worst </span><br><span class="table-text text-teal">#asiapacific #equities #dataanalysis</span> </td> 
+                                                                <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="p-0">
+                                                                    <img class="m-0" src="images/160701.jpg" alt="">
+                                                                </td>
+                                                                <td class="px-2">  <span class="table-header">Robo advisors short circuit over ethical investing</span><br><span class="text-secondary table-text">Providers differ over whether the fledgling market can form basis of </span><br><span class="table-text text-teal">#invest #AI</span> </td> 
+                                                                <td class="pl-1"><span class="btn btn-sm btn-outline-teal"><span class="fa fa-share"></span><br>Share</span> </td>
+                                                            </tr> 
+                                                        </tbody>
+                                                    </table>
+                                                </div> <!-- /.table-stats -->
                                             </div>
                                         </div>
     
                                     </div>
                                 </div>
                             </div><!-- /.card -->
+        
                         </div>
 
                     </div> 
@@ -632,8 +675,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
-
 
     <!--Chartist Chart-->
 
@@ -647,6 +688,84 @@
     <script src="assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
 
     <script src="assets/js/widgets.js"></script>
+
+    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+    <!-- scripit init-->
+    <script src="assets/js/lib/vector-map/vector.init.js"></script>
+
+    <!--  Chart js -->
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script>
+    //doughut chart
+    var ctx = document.getElementById( "doughutChart" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [ {
+                data: [ 16, 8, 21, 35 ],
+                backgroundColor: [
+                                    "#FF686C",
+                                    "#3C8783",
+                                    "#375A64",
+                                    "#A1D4D2"
+                                ],
+                hoverBackgroundColor: [
+                                    "#cf4448",
+                                    "#276d69",
+                                    "#185350",
+                                    "#A1D4D2"
+                                ]
+
+                            } ],
+            labels: [
+                            "Equities",
+                            "Fixed Income",
+                            "Cash",
+                            "Bonds"
+                        ]
+        },
+        options: {
+            responsive: true
+        }
+    } );
+    //line chart
+    var ctx = document.getElementById( "lineChart" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'line',
+        data: {
+            labels: [ "January", "February", "March", "April", "May", "June", "July" ],
+            datasets: [
+                {
+                    label: "Networth",
+                    borderColor: "#3C8783",
+                    borderWidth: "2",
+                    backgroundColor: "rgba(0,10,0,.01)",
+                    data: [ 60, 47, 35, 43, 65, 45, 35 ]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            }
+
+        }
+    } );
+    </script>
 
 
 <div id="container">
