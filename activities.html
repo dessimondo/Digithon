@@ -1,0 +1,640 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X-Wealth | Clients</title>
+    <meta name="description" content="Wealth Management">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
+
+
+    <link href="assets/calendar/fullcalendar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="assets/css/charts/chartist.min.css" rel="stylesheet">  -->
+    <!-- <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">  -->
+
+</head>
+<body>
+
+
+    <!-- Left Panel --> 
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default"> 
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="overview.html"><i class="menu-icon fa fa-dashboard"></i>Overview </a>
+                    </li>
+                    <li>
+                        <a href="clients.html"><i class="menu-icon fa fa-users"></i>Clients</a>
+                    </li>
+                    <li>
+                        <a href="ifttt.html"><i class="menu-icon fa fa-calculator"></i>IFTTT</a>
+                    </li>
+                    <li class="active">
+                        <a href="activities.html"> <i class="menu-icon fa fa-child"></i>Activities</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel --> 
+    <!-- Left Panel -->
+
+
+
+    <!-- Right Panel --> 
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">  
+            <div class="top-left">
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="./overview.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a> 
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> 
+                </div> 
+            </div>
+            <div class="top-right"> 
+                <div class="header-menu"> 
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-envelope"></i>
+                                <span class="count bg-primary">4</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                    <div class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Claudia Cee's passport updated.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Arul Kumar's Birthday tomorrow</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Ronald Tramp's Birthday yesterday</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <div class="user-name">John Smith</div>
+                            <i class="fa fa-caret-down pr-2"></i>
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+
+                            <a class="nav-link" href="client-mode.html"><i class="fa fa-exchange"></i>Switch mode</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
+
+                            <a class="nav-link" href="index.html"><i class="fa fa-sign-out"></i>Logout</a>
+                        </div>
+                    </div>
+                    <div class="header-left">
+                        <div class="dropdown for-alexa">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="alexa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-microphone"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="float-left text-white"><img class="mr-3" src="images/alexa.png" alt="alexa">Hi, I'm listening...</p>
+                                <div class="float-right mr-3 text-teal">
+                                    <i class="fa fa-close"></i>
+                                </div>
+                                <div class="animation">
+                                    <img src="images/Alexa-Listening-Waves.gif" alt="listening">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="hero">
+            
+        </div>
+        <div class="search-bar">
+            <h3 class="text-white text-center mb-4">Help Clients Get Closer To You</h3>
+            <form action="">
+                <div class="py-2"><input type="text" placeholder="Search Activity"><a href="#"><i class="fa fa-search"></i></a> </div>
+            </form>
+        </div>
+        <div class="content pb-0">
+            
+            <!-- Widgets  -->
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card bg-teal text-white">
+                                <div class="card-body">
+                                    <i class="fa fa-umbrella fa-3x"></i>
+                                    <h6 class="text-small mt-2">ALL</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-coffee fa-3x"></i>
+                                    <h6 class="text-small mt-2">Coffee</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-cutlery fa-3x"></i>
+                                    <h6 class="text-small mt-2">Dining</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-bicycle fa-3x"></i>
+                                    <h6 class="text-small mt-2">Outdoors</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-heartbeat fa-3x"></i>
+                                    <h6 class="text-small mt-2">Fitness</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-book fa-3x"></i>
+                                    <h6 class="text-small mt-2">Classes</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-gamepad fa-3x"></i>
+                                    <h6 class="text-small mt-2">Gaming</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-music fa-3x"></i>
+                                    <h6 class="text-small mt-2">Music</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><div class="card">
+                                <div class="card-body">
+                                    <i class="fa fa-video-camera fa-3x"></i>
+                                    <h6 class="text-small mt-2">Theatre</h6>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Widgets End -->
+            <h2 class="black-header pt-5">Most Popular Activities</h2>
+            <div class="filter-bar text-right">
+                <div class="client-select-group">
+                    <label class="pl-3 pr-1">Location</label>
+                    <select class="client-select" name="priority" id="priority">
+                        <option value="" selected>All</option>
+                        <option value="">Singapore</option>
+                        <option value="">India</option>
+                        <option value="">US</option>
+                    </select>
+                </div>
+                <div class="client-select-group">
+                    <label class="pl-3 pr-1">Category</label>
+                    <select class="client-select" name="demographics" id="demographics">
+                        <option value="" selected>All</option>
+                        <option value="">Dining</option>
+                        <option value="">Outdoors</option>
+                        <option value="">Music</option>
+                        <option value="">Fitness</option>
+                    </select>
+                </div>                
+                <div class="client-select-group">
+                    <label class="pl-3 pr-1">Date</label>
+                    <select class="client-select" name="networth" id="networth">
+                        <option value="" selected>All</option>
+                        <option value="">This week</option>
+                        <option value="">Month</option>
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/colorrun.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">Color Run 2018</h5>
+                            <p class="text-black-50">Have an exciting day out with your running enthusiast clients at this unique paint run!</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Tues, 7 Nov 2018</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, Palawan Beach Sentosa</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/wicked.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">Wicked Musical</h5>
+                            <p class="text-black-50">Watch the popular musical story of The Wizard of Oz’s Wicked Witch  with your clients!</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">10 Nov - 17 Nov 2018</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, Marina Bay Sands</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ikon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">iKON Kpop Concert</h5>
+                            <p class="text-black-50">Korean K-Pop sensation iKON are once again on tour in Seoul, Taipei, Bangkok, Kuala Lumpur, Singapore…</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Fri, 20 Nov 2018</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, EXPO</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/yoga.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">OneYoga Class</h5>
+                            <p class="text-black-50">Join your Yoga-loving clients on their yoga classes and stay fit at the same time.</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Every Wed & Fri, 7pm - 8pm</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, Kallang Wave Mall</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/baking.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">Baking Classes</h5>
+                            <p class="text-black-50">Get your clients  out of the office while making delicious pastries together</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Every Sat, 2pm - 4pm</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, Tampines Hub</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/maplestory.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">Maplestory Gaming</h5>
+                            <p class="text-black-50">Game with your fun loving clients by tackling dungeons & monsters together in a party. </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">N/A</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">N/A</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/treetop.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">TreeTop Walk</h5>
+                            <p class="text-black-50">Go hiking with your adventurous clients which concludes with a 250m suspension bridge </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Tues, 7 Nov 2018</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, MacRitchie</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/zumba.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="my-2 font-weight-bold text-uppercase">Zumba</h5>
+                            <p class="text-black-50">Join your clients on their zumba classes and dance your time away. </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-calendar"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Tues, 7 Nov 2018</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="text-teal btn-sm"><i class="fa fa-map-marker"></i></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="text-teal btn-sm">Singapore, Bugis Junction</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <img class="small-thumbnail-back" src="images/160803.jpg" alt="thumbnail">
+                            <img class="small-thumbnail-front" src="images/160703.jpg" alt="thumbnail">
+                            <span class="mb-3 text-teal" style="font-size: 0.8em;">John Doe and 98 others</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="text-center pt-3 pb-5">
+                <div class="btn btn-outline-teal"><i class="fa fa-chevron-down"></i> &nbsp; View More</div>
+            </div>
+
+            <div class="gmap_unix card-body mb-5">
+                <div class="map" id="basic-map"></div>
+            </div>
+
+        </div> <!-- .content -->
+
+    </div><!-- /#right-panel -->
+
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+
+
+    <!--Chartist Chart-->
+
+    <script src="assets/js/lib/moment/moment.js"></script>
+    <script src="assets/calendar/fullcalendar.min.js"></script>
+    <script src="assets/calendar/fullcalendar-init.js"></script>
+
+    <!--Flot Chart-->
+
+    <script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
+    <script src="assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
+    <script src="assets/js/lib/flot-chart/jquery.flot.time.js"></script>
+
+    <script src="assets/js/widgets.js"></script>
+
+    <!-- Gmaps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2jlT6C_to6X1mMvR9yRWeRvpIgTXgddM"></script>
+    <script src="assets/js/lib/gmap/gmaps.js"></script>
+    <script src="assets/js/lib/gmap/gmap.init.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            "use strict"; 
+            var chart1Options = {
+                series: {
+                    lines: {
+                        show: true
+                    },
+                    points: {
+                        show: true
+                    }
+                },
+                xaxis: {
+                    mode: "text"
+                },
+                grid: {
+                    hoverable: true
+                },
+                legend: {
+                    show: false
+                },
+                grid: {
+                    color: "#fff",
+                    hoverable: true,
+                    borderWidth: 0,
+                    backgroundColor: 'transparent'
+                },
+                tooltip: {
+                    show: true,
+                    content: "y: %y"
+                }
+            };
+            var chart1Data = {
+                label: "chart1",
+                color: "#5a8682",
+                data: [
+            [ '1', 70 ],
+            [ '1.5', 130 ],
+            [ '2', 90 ],
+            [ '2.5', 140 ],
+            [ '3', 230 ],
+            [ '3.5', 180 ],
+            [ '4', 240 ]
+            ]
+            };
+            var plot = $.plot( $( "#chart1" ), [ chart1Data ], chart1Options );
+        });
+    </script>
+<div id="container">
+  
+ 
+  
+</div>
+
+
+
+</body>
+</html>
